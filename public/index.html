@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGl2rdohOWW-UPnoOfUjHz1FPRuzNGSD8&libraries=places"
+    ></script>
+
+    <script src="script.js" defer></script>
+    <title>Weather Me</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="icon-container">
+          <div id="icon">
+            <img
+              id="img-icon"
+              src="http://openweathermap.org/img/wn/03n@2x.png"
+              alt="Weather icon"
+            />
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="content">
+        <div class="general-information">
+          <div class="status" data-status>Enter a Location</div>
+          <div class="location" data-location>To Find The Weather</div>
+        </div>
+        <div class="detail-section">
+          <div class="detail">
+            <div class="title">Temperature</div>
+            <div class="value" data-temperature>TBD</div>
+          </div>
+          <div class="detail bordered">
+            <div class="title">Wind</div>
+            <div class="value" data-wind>TBD</div>
+          </div>
+          <div class="detail bordered">
+            <div class="title">Humidity</div>
+            <div class="value" data-humidity>TBD</div>
+          </div>
+          <div class="detail bordered">
+            <div class="title">Pressure</div>
+            <div class="value" data-pressure>TBD</div>
+          </div>
+        </div>
+      </div>
+      <div class="city-search-container">
+        <input
+          type="input"
+          class="city-search"
+          data-city-search
+          placeholder="Enter Location"
+        />
+      </div>
+    </div>
+
+    <a href="https://openweathermap.org/" class="openweathermap"
+      >Powered by Openweathermap</a
+    >
+  </body>
+</html>
