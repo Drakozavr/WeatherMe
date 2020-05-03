@@ -29,6 +29,6 @@ app.post("/weather", (req, res) => {
     .catch((error) => console.error("/weather:error", error));
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server Started");
 });
